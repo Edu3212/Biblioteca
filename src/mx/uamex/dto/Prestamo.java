@@ -18,8 +18,12 @@ public class Prestamo {
     private Date fechainicio;
     private Date fechaentrega;
     private String estatus;
-    private List<Libro> libros;
+    private List<Libro> libros1;
+    private List<Libro> libros2;
+    private List<Libro> libros3;
     private Persona persona;
+
+    
 
     public int getId() {
         return id;
@@ -62,13 +66,28 @@ public class Prestamo {
     }
 
     public List<Libro> getLibros() {
-        return libros;
+        return libros1;
     }
 
     public void setLibros(List<Libro> libros) {
-        this.libros = libros;
+        this.libros1 = libros;
+    }
+    public List<Libro> getLibros2() {
+        return libros2;
     }
 
+    public void setLibros2(List<Libro> libros2) {
+        this.libros2 = libros2;
+    }
+
+    public List<Libro> getLibros3() {
+        return libros3;
+    }
+
+    public void setLibros3(List<Libro> libros3) {
+        this.libros3 = libros3;
+    }
+   
     public Persona getPersona() {
         return persona;
     }
@@ -79,8 +98,9 @@ public class Prestamo {
 
     @Override
     public String toString() {
-        return "Prestamo{" + "id=" + id + ", folio=" + folio + ", fechainicio=" + fechainicio + ", fechaentrega=" + fechaentrega + ", estatus=" + estatus + ", libros=" + libros + ", persona=" + persona + '}';
+        return "Prestamo{" + "id=" + id + ", folio=" + folio + ", fechainicio=" + fechainicio + ", fechaentrega=" + fechaentrega + ", estatus=" + estatus + ", libros=" + libros1  + ", persona=" + persona + '}';
     }
+ 
     
-    
+     
 }
